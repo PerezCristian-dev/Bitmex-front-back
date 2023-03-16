@@ -1,31 +1,38 @@
-# devTest
-We want to understand better how good you are integrating several technologies to provide a solid solution, this is a sample project that will help ilustrate just that.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-**Exchange rate per symbol**
+## Getting Started
 
-We would like to generate a site that provides exchange information and general information of the sample platform selected to the end users.
+First, run the development server:
 
-1. Fork this project and invite me (starl1n), you are going to work on the branch you just created and submit your changes there.
-2. Create a connection to these endpoints using the required technology:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-**Socket endpoint:** 
-wss://ws.bitmex.com/realtime?subscribe=instrument,orderBookL2_25:XBTUSD
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-For reference: https://www.bitmex.com/app/wsAPI
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-**WEB API:**
-https://www.bitmex.com/api/explorer/#!/Announcement/Announcement_get
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-3. Present the data in a human readable fashion (ReactJS/Blazor/Etc)
-4. Store the records received from the connection into a database SQL Server/MariaDB/MongoDB/Postgres/
-5. In a separated section of the solution provide a way to search or filter for the results stored in the Database of choice sorted by date in decending order, maybe you can add any sort of filter here too.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-**This test will evaluate:**
-1. Web Socket/API consumption capabilities
-2. Knowledge of API integration between databases/API
-3. Also will show capabilities of handling the frontend technologies
-4. Familiarity with the language
+## Learn More
 
+To learn more about Next.js, take a look at the following resources:
 
-If you are unfamiliar with any part of the request, is fine, you can skip it **(but make a comment )**
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
